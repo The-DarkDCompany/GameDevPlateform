@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\MainSite\MainSiteController;
 use Illuminate\Foundation\Application;
 use Illuminate\Support\Facades\Route;
 use Inertia\Inertia;
@@ -15,13 +16,18 @@ use Inertia\Inertia;
 |
 */
 
-Route::get('/test', function () {
+Route::get('/', function () {
     return Inertia::render('Welcome', [
         'canLogin' => Route::has('login'),
         'canRegister' => Route::has('register'),
         'laravelVersion' => Application::VERSION,
         'phpVersion' => PHP_VERSION,
     ]);
+});
+
+//Main web stie
+Route::prefix('main-site')->controller(MainSiteController::class)->name('main-site.')->group(function() {
+    Route::get('index', 'index')->name('index');
 });
 
 Route::middleware([

@@ -3,9 +3,9 @@
     <MainSiteLayout>
         <section class="mx-auto text-center">
             <div class="flex flex-col">
-                <div class="mx-auto">
+                <div class="mx-auto mt-32">
                     <h1 class="text-[65px] lg:text-[170px] font-extrabold">
-                        Dark-D
+                        The DDC studio
                     </h1>
                 </div>
 
@@ -15,15 +15,15 @@
                     </h3>
                 </div>
 
-                <div class="w-25 mx-auto flex flex-row lg:flex-col">
-                    <div class=" bg-black rounded-full text-center p-1">
+                <div class="w-25 mx-auto flex items-center flex-row lg:flex-col mt-10 space-x-4">
+                    <div class=" bg-black rounded-full text-center p-1 w-[45px] h-[45px] lg:w-[90px] lg:h-[90px]">
                         <svg
                             xmlns="http://www.w3.org/2000/svg"
                             fill="none"
                             viewBox="0 0 24 24"
                             stroke-width="0.0"
                             stroke="currentColor"
-                            class="w-[64px] h-[70px] fill-green-700"
+                            class="w-[25px] h-[25px] lg:w-[50px] lg:h-[50px] fill-green-700 mx-auto mt-2 lg:mt-4"
                         >
                             <path
                                 stroke-linecap="round"
@@ -36,7 +36,7 @@
                     <div>Watch video</div>
                 </div>
 
-                <div class="flex flex-col lg:flex-row mx-auto mt-5">
+                <div class="flex flex-col lg:flex-row mx-auto mt-5 space-y-4 lg:space-y-0">
                     <button
                         class="px-8 py-4 bg-green-700 text-white lg:w-[170px] text-center"
                     >

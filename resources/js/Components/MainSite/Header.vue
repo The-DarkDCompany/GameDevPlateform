@@ -1,5 +1,5 @@
 <template>
-    <header class="flex justify-between">
+    <header class="flex justify-between bg-cover bg-center bg-[url('/images/hero-bg.jpg')] px-10 py-4 text-white">
        <!--Icon -->
        <div>Icon</div>
        <!--Side bar-->

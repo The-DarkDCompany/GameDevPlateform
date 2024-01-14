@@ -1,10 +1,14 @@
 <template>
     <Head> </Head>
-    <MainSiteLayout>
-        <section class="mx-auto text-center">
+    <MainSiteLayout class="">
+        <section
+            class="mx-auto text-center bg-cover bg-opacity-25 text-opacity-20"
+        >
             <div class="flex flex-col">
                 <div class="mx-auto mt-32">
-                    <h1 class="text-[65px] lg:text-[170px] font-extrabold">
+                    <h1
+                        class="text-[65px] lg:text-[170px] text-white font-extrabold"
+                    >
                         The DDC studio
                     </h1>
                 </div>
@@ -15,15 +19,19 @@
                     </h3>
                 </div>
 
-                <div class="w-25 mx-auto flex items-center flex-row lg:flex-col mt-10 space-x-4">
-                    <div class=" bg-black rounded-full text-center p-1 w-[45px] h-[45px] lg:w-[90px] lg:h-[90px]">
+                <div
+                    class="w-25 mx-auto flex items-center flex-row lg:flex-col mt-10 space-x-4"
+                >
+                    <div
+                        class="bg-black rounded-full text-center p-1 w-[45px] h-[45px] lg:w-[90px] lg:h-[90px]"
+                    >
                         <svg
                             xmlns="http://www.w3.org/2000/svg"
                             fill="none"
                             viewBox="0 0 24 24"
                             stroke-width="0.0"
                             stroke="currentColor"
-                            class="w-[25px] h-[25px] lg:w-[50px] lg:h-[50px] fill-green-700 mx-auto mt-2 lg:mt-4"
+                            class="w-[25px] h-[25px] lg:w-[50px] lg:h-[50px] fill-theme-green-fluo mx-auto mt-2 lg:mt-4"
                         >
                             <path
                                 stroke-linecap="round"
@@ -36,9 +44,11 @@
                     <div>Watch video</div>
                 </div>
 
-                <div class="flex flex-col lg:flex-row mx-auto mt-5 space-y-4 lg:space-y-0">
+                <div
+                    class="flex flex-col lg:flex-row mx-auto mt-5 space-y-4 lg:space-y-0"
+                >
                     <button
-                        class="px-8 py-4 bg-green-700 text-white lg:w-[170px] text-center"
+                        class="px-8 py-4 bg-theme-green-fluo text-white lg:w-[170px] text-center"
                     >
                         More about us
                     </button>
@@ -50,10 +60,87 @@
                 </div>
             </div>
         </section>
+
+        <!--Section 2-->
+        <section
+            class="mx-auto text-center lg:px-52 mt-10 w-full bg-theme-black-dark text-white"
+        >
+            <div class="grid grid-cols-2 justify-items-center">
+                <div class="col-span-2 text-left">
+                    <div class="my-6 mt-32">
+                        <h2 class="text-theme-green-fluo text-xl">
+                            Who whe are
+                        </h2>
+                    </div>
+                    <p class="lg:text-[46px] my-4 font-bold">
+                        We are Sublime, a design and branding agency with
+                        partners worldwide. We design thoughtful digital
+                        experiences and beautiful brand aesthetics.
+                    </p>
+                    <p class="lg:text-[24px] text-white text-opacity-20">
+                        Curabitur arcu erat, accumsan id imperdiet et, porttitor
+                        at sem. Donec rutrum congue leo eget malesuada. Lorem
+                        ipsum dolor sit amet, consectetur adipisicing elit, sed
+                        do eiusmod tempor incididunt ut labore et dolore magna
+                        aliqua. Ut enim ad minim veniam, quis nostrud
+                        exercitation ullamco laboris nisi ut aliquip ex ea
+                        commodo consequat. Duis aute irure dolor in
+                        reprehenderit in voluptate velit esse.
+                    </p>
+                </div>
+                <div class="grid lg:grid-cols-2 col-span-2 mt-8 gap-8">
+                    <div class="col-span-1">
+                        <SubtitleAndDetails
+                            :number="1"
+                            details="Quos dolores saepe mollitia deserunt accusamus autem
+                            reprehenderit. Voluptas facere animi explicabo non
+                            quis magni recusandae. Numquam debitis pariatur
+                            omnis facere unde. Laboriosam minus amet nesciunt
+                            est. Et saepe eos maxime tempore quasi deserunt ab."
+                        />
+                    </div>
+
+                    <div class="col-span-1">
+                        <SubtitleAndDetails
+                            :number="2"
+                            details="Quos dolores saepe mollitia deserunt accusamus autem
+                            reprehenderit. Voluptas facere animi explicabo non
+                            quis magni recusandae. Numquam debitis pariatur
+                            omnis facere unde. Laboriosam minus amet nesciunt
+                            est. Et saepe eos maxime tempore quasi deserunt ab."
+                        />
+
+                    </div>
+
+                    <div class="col-span-1">
+                        <SubtitleAndDetails
+                            :number="3"
+                            details="Quos dolores saepe mollitia deserunt accusamus autem
+                            reprehenderit. Voluptas facere animi explicabo non
+                            quis magni recusandae. Numquam debitis pariatur
+                            omnis facere unde. Laboriosam minus amet nesciunt
+                            est. Et saepe eos maxime tempore quasi deserunt ab."
+                        />
+                    </div>
+
+                    <div class="col-span-1">
+                        <SubtitleAndDetails
+                            :number="4"
+                            details="Quos dolores saepe mollitia deserunt accusamus autem
+                            reprehenderit. Voluptas facere animi explicabo non
+                            quis magni recusandae. Numquam debitis pariatur
+                            omnis facere unde. Laboriosam minus amet nesciunt
+                            est. Et saepe eos maxime tempore quasi deserunt ab."
+                        />
+                    </div>
+                </div>
+            </div>
+        </section>
     </MainSiteLayout>
 </template>
 
 <script setup>
 import { Head } from "@inertiajs/vue3";
 import MainSiteLayout from "@/Layouts/MainSite/MainSiteLayout.vue";
+import SubtitleAndDetails from "@/Components/MainSite/SubtitleAndDetails.vue";
 </script>

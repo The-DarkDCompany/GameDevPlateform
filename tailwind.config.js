@@ -24,6 +24,7 @@ export default {
                 'theme-hover-lighter-blue': '#167BB7',
                 'theme-green-fluo': '#4afc32',
                 'theme-black-dark': '#121212',
+                'theme-black-darker': '#0f0f0f',
             }
         },
     },

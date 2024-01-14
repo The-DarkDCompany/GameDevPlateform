@@ -4,7 +4,7 @@
             <CircleNumber :number="number" />
             <div class="mt-2 font-bold lg:text-2xl">{{subtitle}}</div>
         </div>
-        <div class="col-span-2 text-left">
+        <div class="col-span-2 text-left text-white text-opacity-20 text-[17px] leading-loose">
            {{ details }}
         </div>
     </div>

@@ -61,14 +61,14 @@
             </div>
         </section>
 
-        <!--Section 2-->
+        <!--Who we are -->
         <section
-            class="mx-auto text-center lg:px-52 mt-10 w-full bg-theme-black-dark text-white"
+            class="mx-auto text-center lg:px-52 mt-10 w-full bg-theme-black-dark text-white pb-56"
         >
             <div class="grid grid-cols-2 justify-items-center">
                 <div class="col-span-2 text-left">
                     <div class="my-6 mt-32">
-                        <h2 class="text-theme-green-fluo text-xl">
+                        <h2 class="text-theme-green-fluo text-xl uppercase">
                             Who whe are
                         </h2>
                     </div>
@@ -88,20 +88,18 @@
                         reprehenderit in voluptate velit esse.
                     </p>
                 </div>
-                <div class="grid lg:grid-cols-2 col-span-2 mt-8 gap-8">
+                <div class="grid lg:grid-cols-2 col-span-2 mt-8 lg:gap-16">
                     <div class="col-span-1">
                         <SubtitleAndDetails
+                            subtitle="Define"
                             :number="1"
-                            details="Quos dolores saepe mollitia deserunt accusamus autem
-                            reprehenderit. Voluptas facere animi explicabo non
-                            quis magni recusandae. Numquam debitis pariatur
-                            omnis facere unde. Laboriosam minus amet nesciunt
-                            est. Et saepe eos maxime tempore quasi deserunt ab."
+                            details="Quos dolores saepe mollitia deserunt accusamus autem reprehenderit. Voluptas facere animi explicabo non quis magni recusandae. Numquam debitis pariatur omnis facere unde. Laboriosam minus amet nesciunt est. Et saepe eos maxime tempore quasi deserunt ab."
                         />
                     </div>
 
                     <div class="col-span-1">
                         <SubtitleAndDetails
+                            subtitle="Design"
                             :number="2"
                             details="Quos dolores saepe mollitia deserunt accusamus autem
                             reprehenderit. Voluptas facere animi explicabo non
@@ -109,11 +107,11 @@
                             omnis facere unde. Laboriosam minus amet nesciunt
                             est. Et saepe eos maxime tempore quasi deserunt ab."
                         />
-
                     </div>
 
                     <div class="col-span-1">
                         <SubtitleAndDetails
+                            subtitle="Build"
                             :number="3"
                             details="Quos dolores saepe mollitia deserunt accusamus autem
                             reprehenderit. Voluptas facere animi explicabo non
@@ -125,6 +123,82 @@
 
                     <div class="col-span-1">
                         <SubtitleAndDetails
+                            subtitle="Launch"
+                            :number="4"
+                            details="Quos dolores saepe mollitia deserunt accusamus autem
+                            reprehenderit. Voluptas facere animi explicabo non
+                            quis magni recusandae. Numquam debitis pariatur
+                            omnis facere unde. Laboriosam minus amet nesciunt
+                            est. Et saepe eos maxime tempore quasi deserunt ab."
+                        />
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!--What we do -->
+        <section
+            class="mx-auto text-center lg:px-52 w-full bg-theme-black-darker text-white"
+        >
+            <div class="grid grid-cols-2 justify-items-center">
+                <div class="col-span-2 text-left">
+                    <div class="my-6 mt-32">
+                        <h2 class="text-theme-green-fluo text-xl uppercase">
+                            What we do
+                        </h2>
+                    </div>
+                    <p class="lg:text-[46px] my-4 font-bold">
+                        We take pride in what we do. Our services are designed
+                        to help your business stand out and turn your ideas into
+                        digital realities.
+                    </p>
+                    <p class="lg:text-[24px] text-white text-opacity-20">
+                        Curabitur arcu erat, accumsan id imperdiet et, porttitor
+                        at sem. Donec rutrum congue leo eget malesuada. Lorem
+                        ipsum dolor sit amet, consectetur adipisicing elit, sed
+                        do eiusmod tempor incididunt ut labore et dolore magna
+                        aliqua. Ut enim ad minim veniam, quis nostrud
+                        exercitation ullamco laboris nisi ut aliquip ex ea
+                        commodo consequat. Duis aute irure dolor in
+                        reprehenderit in voluptate velit esse.
+                    </p>
+                </div>
+                <div class="grid lg:grid-cols-2 col-span-2 mt-8 lg:gap-16">
+                    <div class="col-span-1">
+                        <SubtitleAndDetails
+                            subtitle="Define"
+                            :number="1"
+                            details="Quos dolores saepe mollitia deserunt accusamus autem reprehenderit. Voluptas facere animi explicabo non quis magni recusandae. Numquam debitis pariatur omnis facere unde. Laboriosam minus amet nesciunt est. Et saepe eos maxime tempore quasi deserunt ab."
+                        />
+                    </div>
+
+                    <div class="col-span-1">
+                        <SubtitleAndDetails
+                            subtitle="Design"
+                            :number="2"
+                            details="Quos dolores saepe mollitia deserunt accusamus autem
+                            reprehenderit. Voluptas facere animi explicabo non
+                            quis magni recusandae. Numquam debitis pariatur
+                            omnis facere unde. Laboriosam minus amet nesciunt
+                            est. Et saepe eos maxime tempore quasi deserunt ab."
+                        />
+                    </div>
+
+                    <div class="col-span-1">
+                        <SubtitleAndDetails
+                            subtitle="Build"
+                            :number="3"
+                            details="Quos dolores saepe mollitia deserunt accusamus autem
+                            reprehenderit. Voluptas facere animi explicabo non
+                            quis magni recusandae. Numquam debitis pariatur
+                            omnis facere unde. Laboriosam minus amet nesciunt
+                            est. Et saepe eos maxime tempore quasi deserunt ab."
+                        />
+                    </div>
+
+                    <div class="col-span-1">
+                        <SubtitleAndDetails
+                            subtitle="Launch"
                             :number="4"
                             details="Quos dolores saepe mollitia deserunt accusamus autem
                             reprehenderit. Voluptas facere animi explicabo non

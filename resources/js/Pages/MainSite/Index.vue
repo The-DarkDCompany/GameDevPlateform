@@ -91,10 +91,10 @@
                 <div class="grid lg:grid-cols-2 col-span-2 mt-8 lg:gap-16">
                     <div class="col-span-1">
                         <SubtitleAndDetails
-                        data-aos="fade-up"
-                        subtitle="Define"
-                        :number="1"
-                        details="Quos dolores saepe mollitia deserunt accusamus autem reprehenderit. Voluptas facere animi explicabo non quis magni recusandae. Numquam debitis pariatur omnis facere unde. Laboriosam minus amet nesciunt est. Et saepe eos maxime tempore quasi deserunt ab."
+                            data-aos="fade-up"
+                            subtitle="Define"
+                            :number="1"
+                            details="Quos dolores saepe mollitia deserunt accusamus autem reprehenderit. Voluptas facere animi explicabo non quis magni recusandae. Numquam debitis pariatur omnis facere unde. Laboriosam minus amet nesciunt est. Et saepe eos maxime tempore quasi deserunt ab."
                         />
                     </div>
 
@@ -224,7 +224,8 @@
                         </h2>
                     </div>
                     <p class="lg:text-[46px] my-4 font-bold text-center">
-                        We create brands, products, and experiences that people love. Check out our recent works.
+                        We create brands, products, and experiences that people
+                        love. Check out our recent works.
                     </p>
                 </div>
                 <div class="grid lg:grid-cols-2 col-span-2 mt-8 lg:gap-16">
@@ -236,31 +237,19 @@
 
                     <div class="col-span-1">
                         <AnimatedImage
-                            image_url="https://cdn2.unrealengine.com/egs-expeditions-carousel-mobile-1200x1600-918609e19cbd.jpg?h=854&quality=medium&resize=1&w=640"
+                            image_url="https://cdn1.epicgames.com/spt-assets/7dbdd3c2a72e4cbaacc166a884031882/expeditions--a-mudrunner-game-rc1vn.jpg?h=270&quality=medium&resize=1&w=480"
                         />
                     </div>
 
                     <div class="col-span-1">
-                        <SubtitleAndDetails
-                            subtitle="Build"
-                            :number="3"
-                            details="Quos dolores saepe mollitia deserunt accusamus autem
-                            reprehenderit. Voluptas facere animi explicabo non
-                            quis magni recusandae. Numquam debitis pariatur
-                            omnis facere unde. Laboriosam minus amet nesciunt
-                            est. Et saepe eos maxime tempore quasi deserunt ab."
+                        <AnimatedImage
+                            image_url="https://static0.gamerantimages.com/wordpress/wp-content/uploads/2020/07/greenmangaming-summer-sale.jpg"
                         />
                     </div>
 
                     <div class="col-span-1">
-                        <SubtitleAndDetails
-                            subtitle="Launch"
-                            :number="4"
-                            details="Quos dolores saepe mollitia deserunt accusamus autem
-                            reprehenderit. Voluptas facere animi explicabo non
-                            quis magni recusandae. Numquam debitis pariatur
-                            omnis facere unde. Laboriosam minus amet nesciunt
-                            est. Et saepe eos maxime tempore quasi deserunt ab."
+                        <AnimatedImage
+                            image_url="https://assets-prd.ignimgs.com/2022/09/23/top25modernpcgames-blogroll-1663951042311.jpg"
                         />
                     </div>
                 </div>
@@ -270,7 +259,7 @@
 </template>
 
 <script setup>
-import { onMounted  } from "vue";
+import { onMounted } from "vue";
 import { Head } from "@inertiajs/vue3";
 import MainSiteLayout from "@/Layouts/MainSite/MainSiteLayout.vue";
 import SubtitleAndDetails from "@/Components/MainSite/SubtitleAndDetails.vue";

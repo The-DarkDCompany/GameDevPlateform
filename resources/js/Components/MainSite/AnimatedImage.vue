@@ -1,7 +1,9 @@
 <template>
     <div>
-        <div class="transition ease-in-out delay-500 bg-blue-500 hover:-translate-y-1 hover:scale-110 hover:bg-indigo-500 duration-300 ...">
-            <img :src="image_url" class="" alt="">
+        <div
+            class="transition ease-in-out delay-500 bg-blue-500 hover:-translate-y-1 hover:scale-110 hover:bg-indigo-500 duration-300 ..."
+        >
+            <img :src="image_url" class="h-64 w-full" alt="" />
         </div>
     </div>
 </template>
@@ -17,6 +19,6 @@ const props = defineProps({
     image_url: {
         type: String,
         default: "",
-    }
+    },
 });
 </script>

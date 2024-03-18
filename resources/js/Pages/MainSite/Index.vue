@@ -214,7 +214,7 @@
 
         <!--What we do -->
         <section
-            class="mx-auto text-center lg:px-52 w-full bg-theme-black-darker text-white"
+            class="mx-auto text-center lg:px-52 w-full bg-theme-black-darker text-white py-10"
         >
             <div class="grid grid-cols-2 justify-items-center">
                 <div class="col-span-2 text-center">
@@ -255,6 +255,7 @@
                 </div>
             </div>
         </section>
+
     </MainSiteLayout>
 </template>
 
@@ -264,4 +265,9 @@ import { Head } from "@inertiajs/vue3";
 import MainSiteLayout from "@/Layouts/MainSite/MainSiteLayout.vue";
 import SubtitleAndDetails from "@/Components/MainSite/SubtitleAndDetails.vue";
 import AnimatedImage from "@/Components/MainSite/AnimatedImage.vue";
+import AOS from "aos";
+
+onMounted(() => {
+    AOS.init();
+})
 </script>

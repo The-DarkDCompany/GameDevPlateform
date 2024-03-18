@@ -4,12 +4,12 @@
         <section
             class="mx-auto text-center bg-cover bg-opacity-25 text-opacity-20"
         >
-            <div class="flex flex-col">
+            <div class="flex flex-col" data-aos="fade">
                 <div class="mx-auto mt-32">
                     <h1
                         class="text-[65px] lg:text-[170px] text-white font-extrabold"
                     >
-                        The DDC studio
+                        The Black Bow studio
                     </h1>
                 </div>
 
@@ -91,9 +91,10 @@
                 <div class="grid lg:grid-cols-2 col-span-2 mt-8 lg:gap-16">
                     <div class="col-span-1">
                         <SubtitleAndDetails
-                            subtitle="Define"
-                            :number="1"
-                            details="Quos dolores saepe mollitia deserunt accusamus autem reprehenderit. Voluptas facere animi explicabo non quis magni recusandae. Numquam debitis pariatur omnis facere unde. Laboriosam minus amet nesciunt est. Et saepe eos maxime tempore quasi deserunt ab."
+                        data-aos="fade-up"
+                        subtitle="Define"
+                        :number="1"
+                        details="Quos dolores saepe mollitia deserunt accusamus autem reprehenderit. Voluptas facere animi explicabo non quis magni recusandae. Numquam debitis pariatur omnis facere unde. Laboriosam minus amet nesciunt est. Et saepe eos maxime tempore quasi deserunt ab."
                         />
                     </div>
 
@@ -210,11 +211,68 @@
                 </div>
             </div>
         </section>
+
+        <!--What we do -->
+        <section
+            class="mx-auto text-center lg:px-52 w-full bg-theme-black-darker text-white"
+        >
+            <div class="grid grid-cols-2 justify-items-center">
+                <div class="col-span-2 text-center">
+                    <div class="my-6 mt-32">
+                        <h2 class="text-theme-green-fluo text-xl uppercase">
+                            Our works
+                        </h2>
+                    </div>
+                    <p class="lg:text-[46px] my-4 font-bold text-center">
+                        We create brands, products, and experiences that people love. Check out our recent works.
+                    </p>
+                </div>
+                <div class="grid lg:grid-cols-2 col-span-2 mt-8 lg:gap-16">
+                    <div class="col-span-1">
+                        <AnimatedImage
+                            image_url="https://www.shutterstock.com/shutterstock/photos/2155227903/display_1500/stock-vector-pixel-game-win-screen-retro-bit-video-game-interface-with-you-win-text-computer-game-level-up-2155227903.jpg"
+                        />
+                    </div>
+
+                    <div class="col-span-1">
+                        <AnimatedImage
+                            image_url="https://cdn2.unrealengine.com/egs-expeditions-carousel-mobile-1200x1600-918609e19cbd.jpg?h=854&quality=medium&resize=1&w=640"
+                        />
+                    </div>
+
+                    <div class="col-span-1">
+                        <SubtitleAndDetails
+                            subtitle="Build"
+                            :number="3"
+                            details="Quos dolores saepe mollitia deserunt accusamus autem
+                            reprehenderit. Voluptas facere animi explicabo non
+                            quis magni recusandae. Numquam debitis pariatur
+                            omnis facere unde. Laboriosam minus amet nesciunt
+                            est. Et saepe eos maxime tempore quasi deserunt ab."
+                        />
+                    </div>
+
+                    <div class="col-span-1">
+                        <SubtitleAndDetails
+                            subtitle="Launch"
+                            :number="4"
+                            details="Quos dolores saepe mollitia deserunt accusamus autem
+                            reprehenderit. Voluptas facere animi explicabo non
+                            quis magni recusandae. Numquam debitis pariatur
+                            omnis facere unde. Laboriosam minus amet nesciunt
+                            est. Et saepe eos maxime tempore quasi deserunt ab."
+                        />
+                    </div>
+                </div>
+            </div>
+        </section>
     </MainSiteLayout>
 </template>
 
 <script setup>
+import { onMounted  } from "vue";
 import { Head } from "@inertiajs/vue3";
 import MainSiteLayout from "@/Layouts/MainSite/MainSiteLayout.vue";
 import SubtitleAndDetails from "@/Components/MainSite/SubtitleAndDetails.vue";
+import AnimatedImage from "@/Components/MainSite/AnimatedImage.vue";
 </script>
